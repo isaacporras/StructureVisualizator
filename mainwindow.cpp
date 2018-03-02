@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "listasimple.h"
+#include "enlazadadoble.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -22,4 +23,11 @@ void MainWindow::on_ButtonSimple_clicked()
     ventanaSimple.setModal(true);
     ventanaSimple.exec();
 
+}
+
+void MainWindow::on_ButtonDoble_clicked()
+{
+   EnlazadaDoble ventanaEnlazada;
+   ventanaEnlazada.setModal(true);
+   ventanaEnlazada.exec();
 }

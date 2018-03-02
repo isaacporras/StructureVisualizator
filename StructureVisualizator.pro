@@ -26,17 +26,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    listasimple.cpp
+    listasimple.cpp \
+    enlazadadoble.cpp
 
 HEADERS += \
         mainwindow.h \
     simplelinkedlist.h \
     nodosimple.h \
-    listasimple.h
+    listasimple.h \
+    enlazadadoble.h \
+    doblelinkedlist.h \
+    nododobleenlazado.h
 
 FORMS += \
         mainwindow.ui \
-    listasimple.ui
+    listasimple.ui \
+    enlazadadoble.ui
 
 RESOURCES += \
     photos.qrc
