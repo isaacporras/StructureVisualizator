@@ -3,6 +3,7 @@
 #include "listasimple.h"
 #include "enlazadadoble.h"
 #include "viewcircularlist.h"
+#include "viewtree.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -38,4 +39,11 @@ void MainWindow::on_ButtonCircular_clicked()
         ViewCircularList ventanacircular;
         ventanacircular.setModal(true);
         ventanacircular.exec();
+}
+
+void MainWindow::on_ButtonArbol_clicked()
+{
+    ViewTree ventanaArbol;
+    ventanaArbol.setModal(true);
+    ventanaArbol.exec();
 }

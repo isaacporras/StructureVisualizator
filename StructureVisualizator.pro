@@ -28,7 +28,8 @@ SOURCES += \
         mainwindow.cpp \
     listasimple.cpp \
     enlazadadoble.cpp \
-    viewcircularlist.cpp
+    viewcircularlist.cpp \
+    viewtree.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -40,13 +41,15 @@ HEADERS += \
     nododobleenlazado.h \
     viewcircularlist.h \
     circularlist.h \
-    nodolistacircular.h
+    nodolistacircular.h \
+    viewtree.h
 
 FORMS += \
         mainwindow.ui \
     listasimple.ui \
     enlazadadoble.ui \
-    viewcircularlist.ui
+    viewcircularlist.ui \
+    viewtree.ui
 
 RESOURCES += \
     photos.qrc

@@ -22,6 +22,8 @@ private slots:
 
     void on_ButtonCircular_clicked();
 
+    void on_ButtonArbol_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
