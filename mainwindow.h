@@ -20,6 +20,8 @@ private slots:
 
     void on_ButtonDoble_clicked();
 
+    void on_ButtonCircular_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
