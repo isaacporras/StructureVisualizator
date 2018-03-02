@@ -42,7 +42,9 @@ HEADERS += \
     viewcircularlist.h \
     circularlist.h \
     nodolistacircular.h \
-    viewtree.h
+    viewtree.h \
+    binarytree.h \
+    treenode.h
 
 FORMS += \
         mainwindow.ui \
