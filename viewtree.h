@@ -22,7 +22,7 @@ private slots:
     void on_InsertarButton_clicked();
 
     void on_EliminarButton_clicked();
-    void recorreDibuja(TreeNode *nodo, int corx, int cory);
+    void recorreDibuja(TreeNode *nodo, int corx, int cory, QString lado);
 
 private:
     Ui::ViewTree *ui;
@@ -30,6 +30,7 @@ private:
     QGraphicsScene *scene;
     int coordenadax;
     int coordenaday;
+    bool sedibujoantes;
 };
 
 #endif // VIEWTREE_H
