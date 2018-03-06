@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StructureVisualizator: Fichero Fuente nodolistacircular.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">StructureVisualizator
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Visualizador de Estructuras de datos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">nodolistacircular.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="nodolistacircular_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NODOLISTACIRCULAR_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define NODOLISTACIRCULAR_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;QString&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="nodolistacircular_8h.html#ac97b8ee753e4405397a42ad5799b0f9e">    8</a></span>&#160;<span class="preprocessor">#define null 0;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_nodo_lista_circular.html">NodoListaCircular</a> {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QString dato;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> posicion;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html#a689ddba0f9da231ef3bfdcd4a0d45ae3">   26</a></span>&#160;    <a class="code" href="class_nodo_lista_circular.html">NodoListaCircular</a> *<a class="code" href="class_nodo_lista_circular.html#a689ddba0f9da231ef3bfdcd4a0d45ae3">siguiente</a>;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html#a62c97352f8df5d9b817568467d90ee33">   27</a></span>&#160;    <a class="code" href="class_nodo_lista_circular.html">NodoListaCircular</a> *<a class="code" href="class_nodo_lista_circular.html#a62c97352f8df5d9b817568467d90ee33">anterior</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html#a545fa0b7acf627390514fe87b6aff277">   32</a></span>&#160;    <a class="code" href="class_nodo_lista_circular.html#a545fa0b7acf627390514fe87b6aff277">NodoListaCircular</a> (QString dat){</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;dato = dat;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_nodo_lista_circular.html#a689ddba0f9da231ef3bfdcd4a0d45ae3">siguiente</a> = <a class="code" href="nodolistacircular_8h.html#ac97b8ee753e4405397a42ad5799b0f9e">null</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_nodo_lista_circular.html#a62c97352f8df5d9b817568467d90ee33">anterior</a> = <a class="code" href="nodolistacircular_8h.html#ac97b8ee753e4405397a42ad5799b0f9e">null</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html#a37393a1f2c117891206678387d2a9837">   45</a></span>&#160;    QString <a class="code" href="class_nodo_lista_circular.html#a37393a1f2c117891206678387d2a9837">getDato</a>(){</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> dato;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html#aa6307fda1bf33f2d8035893ee9fea81a">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_nodo_lista_circular.html#aa6307fda1bf33f2d8035893ee9fea81a">setPos</a>(<span class="keywordtype">int</span> pos){</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        this-&gt;posicion = pos;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html#a5e835714bbc78795e50e6c76a3157ff4">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_nodo_lista_circular.html#a5e835714bbc78795e50e6c76a3157ff4">getPos</a>(){</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> this-&gt;posicion;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_nodo_lista_circular.html#a3f2bd335e477f76dfcb2417686ca6296">   70</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_nodo_lista_circular.html#a3f2bd335e477f76dfcb2417686ca6296">setDato</a>(QString dat){</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        this-&gt;dato = dat;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // NODOLISTACIRCULAR_H</span></div><div class="ttc" id="class_nodo_lista_circular_html"><div class="ttname"><a href="class_nodo_lista_circular.html">NodoListaCircular</a></div><div class="ttdoc">The NodoListaCircular class Estructura del nodo de la lista circular. </div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:21</div></div>
+<div class="ttc" id="class_nodo_lista_circular_html_a37393a1f2c117891206678387d2a9837"><div class="ttname"><a href="class_nodo_lista_circular.html#a37393a1f2c117891206678387d2a9837">NodoListaCircular::getDato</a></div><div class="ttdeci">QString getDato()</div><div class="ttdoc">getDato da el dato que contiene el nodo </div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:45</div></div>
+<div class="ttc" id="class_nodo_lista_circular_html_aa6307fda1bf33f2d8035893ee9fea81a"><div class="ttname"><a href="class_nodo_lista_circular.html#aa6307fda1bf33f2d8035893ee9fea81a">NodoListaCircular::setPos</a></div><div class="ttdeci">void setPos(int pos)</div><div class="ttdoc">setPos establece la posicion del nodo </div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:54</div></div>
+<div class="ttc" id="class_nodo_lista_circular_html_a62c97352f8df5d9b817568467d90ee33"><div class="ttname"><a href="class_nodo_lista_circular.html#a62c97352f8df5d9b817568467d90ee33">NodoListaCircular::anterior</a></div><div class="ttdeci">NodoListaCircular * anterior</div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:27</div></div>
+<div class="ttc" id="nodolistacircular_8h_html_ac97b8ee753e4405397a42ad5799b0f9e"><div class="ttname"><a href="nodolistacircular_8h.html#ac97b8ee753e4405397a42ad5799b0f9e">null</a></div><div class="ttdeci">#define null</div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:8</div></div>
+<div class="ttc" id="class_nodo_lista_circular_html_a5e835714bbc78795e50e6c76a3157ff4"><div class="ttname"><a href="class_nodo_lista_circular.html#a5e835714bbc78795e50e6c76a3157ff4">NodoListaCircular::getPos</a></div><div class="ttdeci">int getPos()</div><div class="ttdoc">getPos da la posicon del nodo </div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:62</div></div>
+<div class="ttc" id="class_nodo_lista_circular_html_a545fa0b7acf627390514fe87b6aff277"><div class="ttname"><a href="class_nodo_lista_circular.html#a545fa0b7acf627390514fe87b6aff277">NodoListaCircular::NodoListaCircular</a></div><div class="ttdeci">NodoListaCircular(QString dat)</div><div class="ttdoc">NodoListaCircular inicializa el nodo. </div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:32</div></div>
+<div class="ttc" id="class_nodo_lista_circular_html_a3f2bd335e477f76dfcb2417686ca6296"><div class="ttname"><a href="class_nodo_lista_circular.html#a3f2bd335e477f76dfcb2417686ca6296">NodoListaCircular::setDato</a></div><div class="ttdeci">void setDato(QString dat)</div><div class="ttdoc">setDato establece el dato del nodo </div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:70</div></div>
+<div class="ttc" id="class_nodo_lista_circular_html_a689ddba0f9da231ef3bfdcd4a0d45ae3"><div class="ttname"><a href="class_nodo_lista_circular.html#a689ddba0f9da231ef3bfdcd4a0d45ae3">NodoListaCircular::siguiente</a></div><div class="ttdeci">NodoListaCircular * siguiente</div><div class="ttdef"><b>Definition:</b> nodolistacircular.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

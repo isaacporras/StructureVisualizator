@@ -1,0 +1,215 @@
+\hypertarget{class_simple_linked_list}{}\section{Referencia de la Clase Simple\+Linked\+List}
+\label{class_simple_linked_list}\index{Simple\+Linked\+List@{Simple\+Linked\+List}}
+
+
+The \mbox{\hyperlink{class_simple_linked_list}{Simple\+Linked\+List}} class Estructura de la lista simple.  
+
+
+
+
+{\ttfamily \#include $<$simplelinkedlist.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simple_linked_list_a508909ddc17e7be9e6c37554cac42bf7}{Simple\+Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_simple_linked_list}{Simple\+Linked\+List}} incializa la lista simple. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_aac2d1b432374ecbc20e8d9c5ba738fa7}{insertar\+Por\+Posicion}} (int pos, Q\+String dato)
+\begin{DoxyCompactList}\small\item\em insertar\+Por\+Posicion inserta un nodo en una posicion en especifico \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_a2da267887f7b64579e3eb56c1940b20a}{ingresar\+Dato\+Final}} (Q\+String dato)
+\begin{DoxyCompactList}\small\item\em ingresar\+Dato\+Final inserta un dato al final de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_aef2841b155c31147e5932c13302f39c4}{ingresar\+Dato\+Inicio}} (Q\+String dato)
+\begin{DoxyCompactList}\small\item\em ingresar\+Dato\+Inicio inserta un nodo al inicio de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_a260b6de5d5c73652fa016c3b63222bae}{eliminar\+Posicion}} (int pos)
+\begin{DoxyCompactList}\small\item\em eliminar\+Posicion elimina un nodo en una posicion en especifico \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_a398074e6af83b72302153bef22e5a899}{eliminar\+Inicio}} ()
+\begin{DoxyCompactList}\small\item\em eliminar\+Inicio elimina el nodo del inicio de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_aabf382c8f9262f7b23718f60c1ef724d}{eliminar\+Final}} ()
+\begin{DoxyCompactList}\small\item\em eliminar\+Final elimina el nodo del final de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_a4ad22b92d55951e72e45dcf7f2867a5d}{imprimir\+Lista}} ()
+\begin{DoxyCompactList}\small\item\em imprimir\+Lista imprime la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simple_linked_list_ac2d7b784c2c5b20824a4ab54ce20eaa7}{editar}} (int pos, Q\+String dato)
+\begin{DoxyCompactList}\small\item\em editar edita el dato de un nodo en especifico \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nodo_simple}{Nodo\+Simple}} \mbox{\hyperlink{class_simple_linked_list_a443815291e245287229b5aca1d963faf}{obtenerpor\+Posicion}} (int pos)
+\begin{DoxyCompactList}\small\item\em obtenerpor\+Posicion retorna el nodo que se esta buscando \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nodo_simple}{Nodo\+Simple}} $\ast$ \mbox{\hyperlink{class_simple_linked_list_a8bfa0f48fc7ace062a1220477f7e824b}{primero}}
+\item 
+\mbox{\hyperlink{class_nodo_simple}{Nodo\+Simple}} $\ast$ \mbox{\hyperlink{class_simple_linked_list_a2f2e30e2a9c1a8bfdf518bc28b6fcf0c}{ultimo}}
+\item 
+int \mbox{\hyperlink{class_simple_linked_list_acb900363f7077cdb4036bef55a16671d}{largo}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+The \mbox{\hyperlink{class_simple_linked_list}{Simple\+Linked\+List}} class Estructura de la lista simple. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_simple_linked_list_a508909ddc17e7be9e6c37554cac42bf7}\label{class_simple_linked_list_a508909ddc17e7be9e6c37554cac42bf7}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{Simple\+Linked\+List()}{SimpleLinkedList()}}
+{\footnotesize\ttfamily Simple\+Linked\+List\+::\+Simple\+Linked\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_simple_linked_list}{Simple\+Linked\+List}} incializa la lista simple. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_simple_linked_list_ac2d7b784c2c5b20824a4ab54ce20eaa7}\label{class_simple_linked_list_ac2d7b784c2c5b20824a4ab54ce20eaa7}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!editar@{editar}}
+\index{editar@{editar}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::editar (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+editar edita el dato de un nodo en especifico 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion del nodo que se quiere editar \\
+\hline
+{\em dato} & dato por el que se quiere modificar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simple_linked_list_aabf382c8f9262f7b23718f60c1ef724d}\label{class_simple_linked_list_aabf382c8f9262f7b23718f60c1ef724d}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!eliminar\+Final@{eliminar\+Final}}
+\index{eliminar\+Final@{eliminar\+Final}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{eliminar\+Final()}{eliminarFinal()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::eliminar\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar\+Final elimina el nodo del final de la lista 
+
+\mbox{\Hypertarget{class_simple_linked_list_a398074e6af83b72302153bef22e5a899}\label{class_simple_linked_list_a398074e6af83b72302153bef22e5a899}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!eliminar\+Inicio@{eliminar\+Inicio}}
+\index{eliminar\+Inicio@{eliminar\+Inicio}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{eliminar\+Inicio()}{eliminarInicio()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::eliminar\+Inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar\+Inicio elimina el nodo del inicio de la lista 
+
+\mbox{\Hypertarget{class_simple_linked_list_a260b6de5d5c73652fa016c3b63222bae}\label{class_simple_linked_list_a260b6de5d5c73652fa016c3b63222bae}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!eliminar\+Posicion@{eliminar\+Posicion}}
+\index{eliminar\+Posicion@{eliminar\+Posicion}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{eliminar\+Posicion()}{eliminarPosicion()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::eliminar\+Posicion (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar\+Posicion elimina un nodo en una posicion en especifico 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion en la que se va a eliminar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simple_linked_list_a4ad22b92d55951e72e45dcf7f2867a5d}\label{class_simple_linked_list_a4ad22b92d55951e72e45dcf7f2867a5d}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!imprimir\+Lista@{imprimir\+Lista}}
+\index{imprimir\+Lista@{imprimir\+Lista}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{imprimir\+Lista()}{imprimirLista()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::imprimir\+Lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+imprimir\+Lista imprime la lista 
+
+\mbox{\Hypertarget{class_simple_linked_list_a2da267887f7b64579e3eb56c1940b20a}\label{class_simple_linked_list_a2da267887f7b64579e3eb56c1940b20a}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!ingresar\+Dato\+Final@{ingresar\+Dato\+Final}}
+\index{ingresar\+Dato\+Final@{ingresar\+Dato\+Final}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{ingresar\+Dato\+Final()}{ingresarDatoFinal()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::ingresar\+Dato\+Final (\begin{DoxyParamCaption}\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ingresar\+Dato\+Final inserta un dato al final de la lista 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dato} & dato del nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simple_linked_list_aef2841b155c31147e5932c13302f39c4}\label{class_simple_linked_list_aef2841b155c31147e5932c13302f39c4}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!ingresar\+Dato\+Inicio@{ingresar\+Dato\+Inicio}}
+\index{ingresar\+Dato\+Inicio@{ingresar\+Dato\+Inicio}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{ingresar\+Dato\+Inicio()}{ingresarDatoInicio()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::ingresar\+Dato\+Inicio (\begin{DoxyParamCaption}\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ingresar\+Dato\+Inicio inserta un nodo al inicio de la lista 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dato} & dato del nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simple_linked_list_aac2d1b432374ecbc20e8d9c5ba738fa7}\label{class_simple_linked_list_aac2d1b432374ecbc20e8d9c5ba738fa7}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!insertar\+Por\+Posicion@{insertar\+Por\+Posicion}}
+\index{insertar\+Por\+Posicion@{insertar\+Por\+Posicion}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{insertar\+Por\+Posicion()}{insertarPorPosicion()}}
+{\footnotesize\ttfamily void Simple\+Linked\+List\+::insertar\+Por\+Posicion (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+insertar\+Por\+Posicion inserta un nodo en una posicion en especifico 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicon en la que se va a insertar \\
+\hline
+{\em dato} & dato del nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simple_linked_list_a443815291e245287229b5aca1d963faf}\label{class_simple_linked_list_a443815291e245287229b5aca1d963faf}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!obtenerpor\+Posicion@{obtenerpor\+Posicion}}
+\index{obtenerpor\+Posicion@{obtenerpor\+Posicion}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{obtenerpor\+Posicion()}{obtenerporPosicion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nodo_simple}{Nodo\+Simple}} Simple\+Linked\+List\+::obtenerpor\+Posicion (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+obtenerpor\+Posicion retorna el nodo que se esta buscando 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion del nodo buscado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el nodo buscado 
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_simple_linked_list_acb900363f7077cdb4036bef55a16671d}\label{class_simple_linked_list_acb900363f7077cdb4036bef55a16671d}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!largo@{largo}}
+\index{largo@{largo}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{largo}{largo}}
+{\footnotesize\ttfamily int Simple\+Linked\+List\+::largo = 0}
+
+\mbox{\Hypertarget{class_simple_linked_list_a8bfa0f48fc7ace062a1220477f7e824b}\label{class_simple_linked_list_a8bfa0f48fc7ace062a1220477f7e824b}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!primero@{primero}}
+\index{primero@{primero}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{primero}{primero}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nodo_simple}{Nodo\+Simple}}$\ast$ Simple\+Linked\+List\+::primero}
+
+\mbox{\Hypertarget{class_simple_linked_list_a2f2e30e2a9c1a8bfdf518bc28b6fcf0c}\label{class_simple_linked_list_a2f2e30e2a9c1a8bfdf518bc28b6fcf0c}} 
+\index{Simple\+Linked\+List@{Simple\+Linked\+List}!ultimo@{ultimo}}
+\index{ultimo@{ultimo}!Simple\+Linked\+List@{Simple\+Linked\+List}}
+\subsubsection{\texorpdfstring{ultimo}{ultimo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nodo_simple}{Nodo\+Simple}}$\ast$ Simple\+Linked\+List\+::ultimo}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{simplelinkedlist_8h}{simplelinkedlist.\+h}}\end{DoxyCompactItemize}

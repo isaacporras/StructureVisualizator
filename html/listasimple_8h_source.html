@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StructureVisualizator: Fichero Fuente listasimple.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">StructureVisualizator
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Visualizador de Estructuras de datos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">listasimple.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="listasimple_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LISTASIMPLE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LISTASIMPLE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;QGraphicsScene&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="simplelinkedlist_8h.html">simplelinkedlist.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_lista_simple.html">ListaSimple</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_lista_simple.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_lista_simple.html">ListaSimple</a> : <span class="keyword">public</span> QDialog</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_lista_simple.html#a8fd950a3f4bc90c23a163e9e381081f4">ListaSimple</a>(QWidget *parent = 0);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_lista_simple.html#a44b1edd7d0e73b6e80748c712715e42a">~ListaSimple</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> recorreDibuja(<a class="code" href="class_simple_linked_list.html">SimpleLinkedList</a> *<a class="code" href="class_lista_simple.html#a46e5f8b712f9569021b223e60acabdaa">lista</a>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> on_addButton_clicked();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> on_addInicioButton_clicked();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> on_ButtonInsertarporPos_clicked();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> on_EliminarInicioButton_clicked();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> on_EliminarFinalButton_clicked();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> on_EliminarPosButton_clicked();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> on_EditarButton_clicked();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> on_buscarButton_clicked();</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Ui::ListaSimple *ui;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    QGraphicsScene *scene;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QGraphicsRectItem *rectangle;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QGraphicsTextItem *dato;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_lista_simple.html#a46e5f8b712f9569021b223e60acabdaa">   78</a></span>&#160;    <a class="code" href="class_simple_linked_list.html">SimpleLinkedList</a> *<a class="code" href="class_lista_simple.html#a46e5f8b712f9569021b223e60acabdaa">lista</a>;</div><div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_lista_simple.html#a287deeb5d9e391d810d309798e8bf026">   79</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_lista_simple.html#a287deeb5d9e391d810d309798e8bf026">posx</a>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // LISTASIMPLE_H</span></div><div class="ttc" id="simplelinkedlist_8h_html"><div class="ttname"><a href="simplelinkedlist_8h.html">simplelinkedlist.h</a></div><div class="ttdoc">Estructura de la lista simple. </div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> enlazadadoble.h:23</div></div>
+<div class="ttc" id="class_lista_simple_html_a46e5f8b712f9569021b223e60acabdaa"><div class="ttname"><a href="class_lista_simple.html#a46e5f8b712f9569021b223e60acabdaa">ListaSimple::lista</a></div><div class="ttdeci">SimpleLinkedList * lista</div><div class="ttdef"><b>Definition:</b> listasimple.h:78</div></div>
+<div class="ttc" id="class_lista_simple_html"><div class="ttname"><a href="class_lista_simple.html">ListaSimple</a></div><div class="ttdoc">The ListaSimple class clase que contiene lo referente a la ventana de la lista simple. </div><div class="ttdef"><b>Definition:</b> listasimple.h:22</div></div>
+<div class="ttc" id="class_lista_simple_html_a287deeb5d9e391d810d309798e8bf026"><div class="ttname"><a href="class_lista_simple.html#a287deeb5d9e391d810d309798e8bf026">ListaSimple::posx</a></div><div class="ttdeci">int posx</div><div class="ttdef"><b>Definition:</b> listasimple.h:79</div></div>
+<div class="ttc" id="class_simple_linked_list_html"><div class="ttname"><a href="class_simple_linked_list.html">SimpleLinkedList</a></div><div class="ttdoc">The SimpleLinkedList class Estructura de la lista simple. </div><div class="ttdef"><b>Definition:</b> simplelinkedlist.h:24</div></div>
+<div class="ttc" id="class_lista_simple_html_a44b1edd7d0e73b6e80748c712715e42a"><div class="ttname"><a href="class_lista_simple.html#a44b1edd7d0e73b6e80748c712715e42a">ListaSimple::~ListaSimple</a></div><div class="ttdeci">~ListaSimple()</div><div class="ttdef"><b>Definition:</b> listasimple.cpp:28</div></div>
+<div class="ttc" id="class_lista_simple_html_a8fd950a3f4bc90c23a163e9e381081f4"><div class="ttname"><a href="class_lista_simple.html#a8fd950a3f4bc90c23a163e9e381081f4">ListaSimple::ListaSimple</a></div><div class="ttdeci">ListaSimple(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> listasimple.cpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

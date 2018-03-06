@@ -6,6 +6,18 @@
 #include <iostream>
 #include <string>
 
+
+/**
+  *@file doblelinkedlist.h
+  * @version 1.0
+  * @date 5/3/18
+  * @author Oscar Isaac Porras Perez
+  * @title DobleLinkedList
+  * @brief Estructura de datos lista doblemente enlanzada
+  */
+/**
+ * @brief The DobleLinkedList class clase que contiene la estructura de las listas doblemente enlazadas
+ */
 class DobleLinkedList {
 public:
     NodoDobleEnlazado *primero;
@@ -15,6 +27,9 @@ public:
     //DEFINICION DE LA CLASE
 
 public:
+    /**
+     * @brief DobleLinkedList inicia la lista enlazada
+     */
     DobleLinkedList(){
         primero = ultimo = 0;
         ultimo = primero = 0;
@@ -23,6 +38,11 @@ public:
     // INSERTAR POR POSICION
 
 public:
+    /**
+     * @brief insertarPorPosicion inserta un nodo en una posicion especifica
+     * @param pos posicion en la que se va a insertar
+     * @param dato dato del nodo
+     */
     void insertarPorPosicion(int pos, QString dato){
 
         NodoDobleEnlazado *corredor = primero;
@@ -76,6 +96,10 @@ public:
     //INGRESAR AL FINAL
 
 public:
+    /**
+     * @brief ingresarDatoFinal ingresa un dato al final de la lista
+     * @param dato dato del nodo
+     */
     void ingresarDatoFinal(QString dato){
 
         NodoDobleEnlazado *temporal = new NodoDobleEnlazado(dato);
@@ -109,6 +133,10 @@ public:
     //INGRESAR AL INICIO
 
 public:
+    /**
+     * @brief ingresarDatoInicio ingresa un dato al inicio de la lista
+     * @param dato dato del nodo
+     */
     void ingresarDatoInicio(QString dato){
         NodoDobleEnlazado *temporal = new NodoDobleEnlazado(dato);
 
@@ -138,6 +166,10 @@ public:
     // ELIMINAR POR POSICION
 
 public:
+    /**
+     * @brief eliminarPosicion elimina un nodo por la posicion
+     * @param pos posicion del nodo a eliminar
+     */
     void eliminarPosicion(int pos){
         std::cout << "  El largo de la lista es :" <<this->largo << std::endl;
         NodoDobleEnlazado *corredor = primero;
@@ -198,6 +230,9 @@ public:
     //ELIMINAR AL INICIO
 
 public:
+    /**
+     * @brief eliminarInicio elimina el nodo del inicio
+     */
     void eliminarInicio() {
 
         primero = primero->siguiente;
@@ -227,6 +262,9 @@ public:
     //ELIMINAR AL FINAL
 
 public:
+    /**
+     * @brief eliminarFinal elimina el nodo del final de la lista
+     */
     void eliminarFinal() {
 
 
@@ -247,6 +285,9 @@ public:
     // IMPRIMIR LISTA AL REVEZ
 
 public:
+    /**
+     * @brief imprimirListaAlRevez imprime la lista al revez
+     */
     void imprimirListaAlRevez(){
         NodoDobleEnlazado *corredor = ultimo;
         if (primero == 0){
@@ -263,6 +304,9 @@ public:
 
      //IMPRIMIR LISTA AL DERECHO
 public:
+    /**
+     * @brief imprimirListaDerecho imprime la lista al derecho
+     */
     void imprimirListaDerecho(){
         NodoDobleEnlazado *corredor = primero;
         if (primero == 0){
@@ -281,6 +325,11 @@ public:
     //EDITAR POR POSICION
 
 public:
+    /**
+     * @brief editar cambia el dato del nodo escogido
+     * @param pos posicion del nodo que se quiere insertar
+     * @param dato dato que se quiere cambiar
+     */
     void editar(int pos, QString dato){
 
 
@@ -301,6 +350,11 @@ public:
     }
 
 public:
+    /**
+     * @brief obtenerporPosicion retorna el nodo que se esta buscando
+     * @param pos posicion del nodo buscado
+     * @return el nodo buscado
+     */
     NodoDobleEnlazado obtenerporPosicion(int pos){
 
         if (pos < largo){

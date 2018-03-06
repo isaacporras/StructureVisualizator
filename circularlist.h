@@ -9,6 +9,18 @@
 
 #include "NodoListaCircular.h"
 
+/**
+  *@file circularlist.h
+  * @version 1.0
+  * @date 5/3/18
+  * @author Oscar Isaac Porras Perez
+  * @title CircularList
+  * @brief Estructura de datos lista circular
+  */
+
+/**
+ * @brief The CircularList class clase que contiene la estructura de datos de la lista circular
+ */
 class CircularList {
 public:
     NodoListaCircular *primero;
@@ -18,6 +30,9 @@ public:
     //DEFINICION DE LA CLASE
 
 public:
+    /**
+     * @brief CircularList inicia la lista circular
+     */
     CircularList(){
         primero = ultimo = null;
         ultimo = primero = null;
@@ -27,6 +42,10 @@ public:
     //INGRESAR AL FINAL
 
 public:
+    /**
+     * @brief ingresarDatoFinal ingresa un dato al final de la lista
+     * @param dato es un QString que es el dato del nodo
+     */
     void ingresarDatoFinal(QString dato){
 
         NodoListaCircular *temporal = new NodoListaCircular(dato);
@@ -65,6 +84,10 @@ public:
     //INGRESAR AL INICIO
 
 public:
+    /**
+     * @brief ingresarDatoInicio ingresa un dato al inicio
+     * @param dato el dato del nodo
+     */
     void ingresarDatoInicio(QString dato){
         NodoListaCircular *temporal = new NodoListaCircular(dato);
 
@@ -103,6 +126,11 @@ public:
     // INSERTAR POR POSICION
 
 public:
+    /**
+     * @brief insertarPorPosicion inserta un nodo en la lista por su posicion
+     * @param pos entero que especifica la posicion en la que se quiere insertar
+     * @param dato dato que se le quiere dar al nodo insertado
+     */
     void insertarPorPosicion(int pos,QString dato){
 
         NodoListaCircular *corredor = primero;
@@ -163,6 +191,10 @@ public:
     // ELIMINAR POR POSICION
 
 public:
+    /**
+     * @brief eliminarPosicion eliminar un nodo por posicion
+     * @param pos posicion del nodo que se quiere eliminar
+     */
     void eliminarPosicion(int pos){
         if(pos > largo){
             std::cout << "No se pudo eliminar el dato porque no existe tal posicion" << std::endl;
@@ -210,6 +242,9 @@ public:
     //ELIMINAR AL INICIO
 
 public:
+    /**
+     * @brief eliminarInicio elimina el nodo inicial de la lista
+     */
     void eliminarInicio() {
 
         primero = primero->siguiente;
@@ -234,6 +269,9 @@ public:
     //ELIMINAR AL FINAL
 
 public:
+    /**
+     * @brief eliminarFinal elimina el nodo final de la lista
+     */
     void eliminarFinal() {
 
 
@@ -258,6 +296,9 @@ public:
     // IMPRIMIR LISTA AL DERECHO
 
 public:
+    /**
+     * @brief imprimirListaAlDerecho imprime la lista de inicio a fin
+     */
     void imprimirListaAlDerecho(){
         NodoListaCircular *corredor = primero;
         if (primero == 0){
@@ -283,6 +324,11 @@ public:
     //EDITAR POR POSICION
 
 public:
+    /**
+     * @brief editar cambia el valor de un nodo en especifico
+     * @param pos la posicion del nodo que se quiere editar
+     * @param dato dato nuevo que se le quiere dar
+     */
     void editar(int pos, QString dato){
 
         if(pos>largo){
@@ -306,6 +352,11 @@ public:
     }
 
 public:
+    /**
+     * @brief obtenerporPosicion retorna el nodo que se especifica en la posicion
+     * @param pos posicion del nodo que se quiere retornar
+     * @return
+     */
     NodoListaCircular obtenerporPosicion(int pos){
 
         if (pos < largo){

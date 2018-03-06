@@ -1,0 +1,215 @@
+\hypertarget{class_circular_list}{}\section{Referencia de la Clase Circular\+List}
+\label{class_circular_list}\index{Circular\+List@{Circular\+List}}
+
+
+The \mbox{\hyperlink{class_circular_list}{Circular\+List}} class clase que contiene la estructura de datos de la lista circular.  
+
+
+
+
+{\ttfamily \#include $<$circularlist.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_circular_list_ad4877c840f41f3119b1378e7ac35386c}{Circular\+List}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_circular_list}{Circular\+List}} inicia la lista circular. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_a4d9c44a0352121d91be126746b48408f}{ingresar\+Dato\+Final}} (Q\+String dato)
+\begin{DoxyCompactList}\small\item\em ingresar\+Dato\+Final ingresa un dato al final de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_a4d498cd4c405704101003b90d782bb93}{ingresar\+Dato\+Inicio}} (Q\+String dato)
+\begin{DoxyCompactList}\small\item\em ingresar\+Dato\+Inicio ingresa un dato al inicio \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_ad2dd3f4b5934900494ba50714306a89f}{insertar\+Por\+Posicion}} (int pos, Q\+String dato)
+\begin{DoxyCompactList}\small\item\em insertar\+Por\+Posicion inserta un nodo en la lista por su posicion \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_a7cf69aaaf998bac2f5342da4adc5e55d}{eliminar\+Posicion}} (int pos)
+\begin{DoxyCompactList}\small\item\em eliminar\+Posicion eliminar un nodo por posicion \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_a3a3c9755cb691e9b02f6d584f2fd1c8e}{eliminar\+Inicio}} ()
+\begin{DoxyCompactList}\small\item\em eliminar\+Inicio elimina el nodo inicial de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_a65808e0225fce3f7b90a70973adfc0ff}{eliminar\+Final}} ()
+\begin{DoxyCompactList}\small\item\em eliminar\+Final elimina el nodo final de la lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_a731a6238e742307bcd2734ba90ec360f}{imprimir\+Lista\+Al\+Derecho}} ()
+\begin{DoxyCompactList}\small\item\em imprimir\+Lista\+Al\+Derecho imprime la lista de inicio a fin \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circular_list_a5f98eb44e45979a6373ad7abda059d44}{editar}} (int pos, Q\+String dato)
+\begin{DoxyCompactList}\small\item\em editar cambia el valor de un nodo en especifico \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nodo_lista_circular}{Nodo\+Lista\+Circular}} \mbox{\hyperlink{class_circular_list_abc60af99960852c2aecfc352dd55f48e}{obtenerpor\+Posicion}} (int pos)
+\begin{DoxyCompactList}\small\item\em obtenerpor\+Posicion retorna el nodo que se especifica en la posicion \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nodo_lista_circular}{Nodo\+Lista\+Circular}} $\ast$ \mbox{\hyperlink{class_circular_list_aed38c338f4196ea0eb66f3990b7f3bc8}{primero}}
+\item 
+\mbox{\hyperlink{class_nodo_lista_circular}{Nodo\+Lista\+Circular}} $\ast$ \mbox{\hyperlink{class_circular_list_a45e599ae210b5ebc41a5cd9149bce79e}{ultimo}}
+\item 
+int \mbox{\hyperlink{class_circular_list_ab94765d81b2b6bd145abdb7dad48339e}{largo}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+The \mbox{\hyperlink{class_circular_list}{Circular\+List}} class clase que contiene la estructura de datos de la lista circular. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_circular_list_ad4877c840f41f3119b1378e7ac35386c}\label{class_circular_list_ad4877c840f41f3119b1378e7ac35386c}} 
+\index{Circular\+List@{Circular\+List}!Circular\+List@{Circular\+List}}
+\index{Circular\+List@{Circular\+List}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{Circular\+List()}{CircularList()}}
+{\footnotesize\ttfamily Circular\+List\+::\+Circular\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_circular_list}{Circular\+List}} inicia la lista circular. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_circular_list_a5f98eb44e45979a6373ad7abda059d44}\label{class_circular_list_a5f98eb44e45979a6373ad7abda059d44}} 
+\index{Circular\+List@{Circular\+List}!editar@{editar}}
+\index{editar@{editar}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily void Circular\+List\+::editar (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+editar cambia el valor de un nodo en especifico 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & la posicion del nodo que se quiere editar \\
+\hline
+{\em dato} & dato nuevo que se le quiere dar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circular_list_a65808e0225fce3f7b90a70973adfc0ff}\label{class_circular_list_a65808e0225fce3f7b90a70973adfc0ff}} 
+\index{Circular\+List@{Circular\+List}!eliminar\+Final@{eliminar\+Final}}
+\index{eliminar\+Final@{eliminar\+Final}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{eliminar\+Final()}{eliminarFinal()}}
+{\footnotesize\ttfamily void Circular\+List\+::eliminar\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar\+Final elimina el nodo final de la lista 
+
+\mbox{\Hypertarget{class_circular_list_a3a3c9755cb691e9b02f6d584f2fd1c8e}\label{class_circular_list_a3a3c9755cb691e9b02f6d584f2fd1c8e}} 
+\index{Circular\+List@{Circular\+List}!eliminar\+Inicio@{eliminar\+Inicio}}
+\index{eliminar\+Inicio@{eliminar\+Inicio}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{eliminar\+Inicio()}{eliminarInicio()}}
+{\footnotesize\ttfamily void Circular\+List\+::eliminar\+Inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar\+Inicio elimina el nodo inicial de la lista 
+
+\mbox{\Hypertarget{class_circular_list_a7cf69aaaf998bac2f5342da4adc5e55d}\label{class_circular_list_a7cf69aaaf998bac2f5342da4adc5e55d}} 
+\index{Circular\+List@{Circular\+List}!eliminar\+Posicion@{eliminar\+Posicion}}
+\index{eliminar\+Posicion@{eliminar\+Posicion}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{eliminar\+Posicion()}{eliminarPosicion()}}
+{\footnotesize\ttfamily void Circular\+List\+::eliminar\+Posicion (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar\+Posicion eliminar un nodo por posicion 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion del nodo que se quiere eliminar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circular_list_a731a6238e742307bcd2734ba90ec360f}\label{class_circular_list_a731a6238e742307bcd2734ba90ec360f}} 
+\index{Circular\+List@{Circular\+List}!imprimir\+Lista\+Al\+Derecho@{imprimir\+Lista\+Al\+Derecho}}
+\index{imprimir\+Lista\+Al\+Derecho@{imprimir\+Lista\+Al\+Derecho}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{imprimir\+Lista\+Al\+Derecho()}{imprimirListaAlDerecho()}}
+{\footnotesize\ttfamily void Circular\+List\+::imprimir\+Lista\+Al\+Derecho (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+imprimir\+Lista\+Al\+Derecho imprime la lista de inicio a fin 
+
+\mbox{\Hypertarget{class_circular_list_a4d9c44a0352121d91be126746b48408f}\label{class_circular_list_a4d9c44a0352121d91be126746b48408f}} 
+\index{Circular\+List@{Circular\+List}!ingresar\+Dato\+Final@{ingresar\+Dato\+Final}}
+\index{ingresar\+Dato\+Final@{ingresar\+Dato\+Final}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{ingresar\+Dato\+Final()}{ingresarDatoFinal()}}
+{\footnotesize\ttfamily void Circular\+List\+::ingresar\+Dato\+Final (\begin{DoxyParamCaption}\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ingresar\+Dato\+Final ingresa un dato al final de la lista 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dato} & es un Q\+String que es el dato del nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circular_list_a4d498cd4c405704101003b90d782bb93}\label{class_circular_list_a4d498cd4c405704101003b90d782bb93}} 
+\index{Circular\+List@{Circular\+List}!ingresar\+Dato\+Inicio@{ingresar\+Dato\+Inicio}}
+\index{ingresar\+Dato\+Inicio@{ingresar\+Dato\+Inicio}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{ingresar\+Dato\+Inicio()}{ingresarDatoInicio()}}
+{\footnotesize\ttfamily void Circular\+List\+::ingresar\+Dato\+Inicio (\begin{DoxyParamCaption}\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+ingresar\+Dato\+Inicio ingresa un dato al inicio 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dato} & el dato del nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circular_list_ad2dd3f4b5934900494ba50714306a89f}\label{class_circular_list_ad2dd3f4b5934900494ba50714306a89f}} 
+\index{Circular\+List@{Circular\+List}!insertar\+Por\+Posicion@{insertar\+Por\+Posicion}}
+\index{insertar\+Por\+Posicion@{insertar\+Por\+Posicion}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{insertar\+Por\+Posicion()}{insertarPorPosicion()}}
+{\footnotesize\ttfamily void Circular\+List\+::insertar\+Por\+Posicion (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{Q\+String}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+insertar\+Por\+Posicion inserta un nodo en la lista por su posicion 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & entero que especifica la posicion en la que se quiere insertar \\
+\hline
+{\em dato} & dato que se le quiere dar al nodo insertado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circular_list_abc60af99960852c2aecfc352dd55f48e}\label{class_circular_list_abc60af99960852c2aecfc352dd55f48e}} 
+\index{Circular\+List@{Circular\+List}!obtenerpor\+Posicion@{obtenerpor\+Posicion}}
+\index{obtenerpor\+Posicion@{obtenerpor\+Posicion}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{obtenerpor\+Posicion()}{obtenerporPosicion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nodo_lista_circular}{Nodo\+Lista\+Circular}} Circular\+List\+::obtenerpor\+Posicion (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+obtenerpor\+Posicion retorna el nodo que se especifica en la posicion 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posicion del nodo que se quiere retornar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_circular_list_ab94765d81b2b6bd145abdb7dad48339e}\label{class_circular_list_ab94765d81b2b6bd145abdb7dad48339e}} 
+\index{Circular\+List@{Circular\+List}!largo@{largo}}
+\index{largo@{largo}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{largo}{largo}}
+{\footnotesize\ttfamily int Circular\+List\+::largo = 0}
+
+\mbox{\Hypertarget{class_circular_list_aed38c338f4196ea0eb66f3990b7f3bc8}\label{class_circular_list_aed38c338f4196ea0eb66f3990b7f3bc8}} 
+\index{Circular\+List@{Circular\+List}!primero@{primero}}
+\index{primero@{primero}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{primero}{primero}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nodo_lista_circular}{Nodo\+Lista\+Circular}}$\ast$ Circular\+List\+::primero}
+
+\mbox{\Hypertarget{class_circular_list_a45e599ae210b5ebc41a5cd9149bce79e}\label{class_circular_list_a45e599ae210b5ebc41a5cd9149bce79e}} 
+\index{Circular\+List@{Circular\+List}!ultimo@{ultimo}}
+\index{ultimo@{ultimo}!Circular\+List@{Circular\+List}}
+\subsubsection{\texorpdfstring{ultimo}{ultimo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nodo_lista_circular}{Nodo\+Lista\+Circular}}$\ast$ Circular\+List\+::ultimo}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{circularlist_8h}{circularlist.\+h}}\end{DoxyCompactItemize}

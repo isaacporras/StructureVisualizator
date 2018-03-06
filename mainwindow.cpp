@@ -21,7 +21,6 @@ void MainWindow::on_ButtonSimple_clicked()
 {
     ListaSimple ventanaSimple;
 
-
     ventanaSimple.setModal(true);
     ventanaSimple.exec();
 

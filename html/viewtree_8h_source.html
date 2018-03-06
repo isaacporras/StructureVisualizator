@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StructureVisualizator: Fichero Fuente viewtree.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">StructureVisualizator
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Visualizador de Estructuras de datos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">viewtree.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="viewtree_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VIEWTREE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VIEWTREE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="binarytree_8h.html">binarytree.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;QGraphicsScene&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="treenode_8h.html">treenode.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span><a class="code" href="class_view_tree.html">ViewTree</a>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_view_tree.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_view_tree.html">ViewTree</a> : <span class="keyword">public</span> QDialog</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_view_tree.html#ab2903b9d0a3b1b9a147a5b1e2206ac0e">ViewTree</a>(QWidget *parent = 0);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_view_tree.html#a0ad5e737640d9b992b39088dbfe9f291">~ViewTree</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> on_InsertarButton_clicked();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> on_EliminarButton_clicked();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> recorreDibuja(<a class="code" href="class_tree_node.html">TreeNode</a> *nodo, <span class="keywordtype">int</span> corx, <span class="keywordtype">int</span> cory, QString lado);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Ui::ViewTree *ui;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_binary_tree.html">BinaryTree</a> *arbol;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QGraphicsScene *scene;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> coordenadax;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> coordenaday;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> sedibujoantes;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif // VIEWTREE_H</span></div><div class="ttc" id="treenode_8h_html"><div class="ttname"><a href="treenode_8h.html">treenode.h</a></div><div class="ttdoc">Estructura del nodo para el arbol. </div></div>
+<div class="ttc" id="class_view_tree_html_a0ad5e737640d9b992b39088dbfe9f291"><div class="ttname"><a href="class_view_tree.html#a0ad5e737640d9b992b39088dbfe9f291">ViewTree::~ViewTree</a></div><div class="ttdeci">~ViewTree()</div><div class="ttdef"><b>Definition:</b> viewtree.cpp:18</div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> enlazadadoble.h:23</div></div>
+<div class="ttc" id="class_view_tree_html"><div class="ttname"><a href="class_view_tree.html">ViewTree</a></div><div class="ttdoc">The ViewTree class clase que se encarga de la ventana del Arbol binario. </div><div class="ttdef"><b>Definition:</b> viewtree.h:22</div></div>
+<div class="ttc" id="class_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode</a></div><div class="ttdoc">The TreeNode class Estructura del nodo para el arbol. </div><div class="ttdef"><b>Definition:</b> treenode.h:19</div></div>
+<div class="ttc" id="binarytree_8h_html"><div class="ttname"><a href="binarytree_8h.html">binarytree.h</a></div><div class="ttdoc">Archivo que tiene lo referente al arbol binario. </div></div>
+<div class="ttc" id="class_binary_tree_html"><div class="ttname"><a href="class_binary_tree.html">BinaryTree</a></div><div class="ttdoc">The BinaryTree class clase que maneja la estructura del arbol binario. </div><div class="ttdef"><b>Definition:</b> binarytree.h:21</div></div>
+<div class="ttc" id="class_view_tree_html_ab2903b9d0a3b1b9a147a5b1e2206ac0e"><div class="ttname"><a href="class_view_tree.html#ab2903b9d0a3b1b9a147a5b1e2206ac0e">ViewTree::ViewTree</a></div><div class="ttdeci">ViewTree(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> viewtree.cpp:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

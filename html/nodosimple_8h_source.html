@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>StructureVisualizator: Fichero Fuente nodosimple.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">StructureVisualizator
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Visualizador de Estructuras de datos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">nodosimple.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="nodosimple_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NODOSIMPLE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define NODOSIMPLE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;QString&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> std::string;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="nodosimple_8h.html#ac97b8ee753e4405397a42ad5799b0f9e">    9</a></span>&#160;<span class="preprocessor">#define null 0;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_nodo_simple.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_nodo_simple.html">NodoSimple</a>{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            QString dato;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">int</span> posicion;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_nodo_simple.html#a7ef0a1b5d9ee22ee78dfbf29e25e8450">   27</a></span>&#160;        <a class="code" href="class_nodo_simple.html">NodoSimple</a> *<a class="code" href="class_nodo_simple.html#a7ef0a1b5d9ee22ee78dfbf29e25e8450">siguiente</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_nodo_simple.html#acde7a8d315007bd580fbff42eaa69c9c">   32</a></span>&#160;    <a class="code" href="class_nodo_simple.html#acde7a8d315007bd580fbff42eaa69c9c">NodoSimple</a> (QString dat){</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            this-&gt;dato = dat;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_nodo_simple.html#a7ef0a1b5d9ee22ee78dfbf29e25e8450">siguiente</a> = <a class="code" href="nodosimple_8h.html#ac97b8ee753e4405397a42ad5799b0f9e">null</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_nodo_simple.html#a8e2cf29c0b691d7c81a4a1f2c9414863">   40</a></span>&#160;    QString <a class="code" href="class_nodo_simple.html#a8e2cf29c0b691d7c81a4a1f2c9414863">getDato</a>(){</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> dato;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_nodo_simple.html#a455c9a0f62ba752d4e29e54fd588cdd1">   49</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_nodo_simple.html#a455c9a0f62ba752d4e29e54fd588cdd1">setPos</a>(<span class="keywordtype">int</span> pos){</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            this-&gt;posicion = pos;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_nodo_simple.html#a6808405a250b6a7b097d34767dfa9b30">   57</a></span>&#160;         <span class="keywordtype">int</span> <a class="code" href="class_nodo_simple.html#a6808405a250b6a7b097d34767dfa9b30">getPos</a>(){</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> this-&gt;posicion;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_nodo_simple.html#ab32eeae9ba44f0464a5d45c69602cd11">   65</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_nodo_simple.html#ab32eeae9ba44f0464a5d45c69602cd11">setDato</a>(QString dat){</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            this-&gt;dato = dat;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif // NODOSIMPLE_H</span></div><div class="ttc" id="class_nodo_simple_html_a8e2cf29c0b691d7c81a4a1f2c9414863"><div class="ttname"><a href="class_nodo_simple.html#a8e2cf29c0b691d7c81a4a1f2c9414863">NodoSimple::getDato</a></div><div class="ttdeci">QString getDato()</div><div class="ttdoc">getDato da el dato del nodo </div><div class="ttdef"><b>Definition:</b> nodosimple.h:40</div></div>
+<div class="ttc" id="class_nodo_simple_html"><div class="ttname"><a href="class_nodo_simple.html">NodoSimple</a></div><div class="ttdoc">The NodoSimple class Estructura del nodo de la lista simple. </div><div class="ttdef"><b>Definition:</b> nodosimple.h:22</div></div>
+<div class="ttc" id="nodosimple_8h_html_ac97b8ee753e4405397a42ad5799b0f9e"><div class="ttname"><a href="nodosimple_8h.html#ac97b8ee753e4405397a42ad5799b0f9e">null</a></div><div class="ttdeci">#define null</div><div class="ttdef"><b>Definition:</b> nodosimple.h:9</div></div>
+<div class="ttc" id="class_nodo_simple_html_ab32eeae9ba44f0464a5d45c69602cd11"><div class="ttname"><a href="class_nodo_simple.html#ab32eeae9ba44f0464a5d45c69602cd11">NodoSimple::setDato</a></div><div class="ttdeci">void setDato(QString dat)</div><div class="ttdoc">setDato establece el dato del nodo </div><div class="ttdef"><b>Definition:</b> nodosimple.h:65</div></div>
+<div class="ttc" id="class_nodo_simple_html_a6808405a250b6a7b097d34767dfa9b30"><div class="ttname"><a href="class_nodo_simple.html#a6808405a250b6a7b097d34767dfa9b30">NodoSimple::getPos</a></div><div class="ttdeci">int getPos()</div><div class="ttdoc">getPos da la posicion del nodo </div><div class="ttdef"><b>Definition:</b> nodosimple.h:57</div></div>
+<div class="ttc" id="class_nodo_simple_html_a455c9a0f62ba752d4e29e54fd588cdd1"><div class="ttname"><a href="class_nodo_simple.html#a455c9a0f62ba752d4e29e54fd588cdd1">NodoSimple::setPos</a></div><div class="ttdeci">void setPos(int pos)</div><div class="ttdoc">setPos establece la posicion del nodo </div><div class="ttdef"><b>Definition:</b> nodosimple.h:49</div></div>
+<div class="ttc" id="class_nodo_simple_html_a7ef0a1b5d9ee22ee78dfbf29e25e8450"><div class="ttname"><a href="class_nodo_simple.html#a7ef0a1b5d9ee22ee78dfbf29e25e8450">NodoSimple::siguiente</a></div><div class="ttdeci">NodoSimple * siguiente</div><div class="ttdef"><b>Definition:</b> nodosimple.h:27</div></div>
+<div class="ttc" id="class_nodo_simple_html_acde7a8d315007bd580fbff42eaa69c9c"><div class="ttname"><a href="class_nodo_simple.html#acde7a8d315007bd580fbff42eaa69c9c">NodoSimple::NodoSimple</a></div><div class="ttdeci">NodoSimple(QString dat)</div><div class="ttdoc">NodoSimple incia el nodo. </div><div class="ttdef"><b>Definition:</b> nodosimple.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,12 +1,23 @@
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
 
+/**
+  *@file binarytree.h
+  * @version 1.0
+  * @date 5/3/18
+  * @author Oscar Isaac Porras Perez
+  * @title Binary Tree
+  * @brief Archivo que tiene lo referente al arbol binario
+  */
+
 #include <iostream>
 #include <string>
 
 #include "treenode.h"
 using std::string;
-
+/**
+ * @brief The BinaryTree class clase que maneja la estructura del arbol binario
+ */
 class BinaryTree {
 
     private:
@@ -14,6 +25,9 @@ class BinaryTree {
 
 
     public:
+        /**
+             * @brief BinaryTree inicia el arbol binario
+             */
             BinaryTree(){
                 root = 0;
             }
@@ -24,6 +38,10 @@ class BinaryTree {
         }
 
     public:
+        /**
+         * @brief insertarNodo inserta un nodo
+         * @param dato es el dato del nodo
+         */
         void insertarNodo(int dato){
             string posFinal;
             TreeNode *padre = 0;
@@ -90,6 +108,10 @@ class BinaryTree {
             }
         }
     public:
+        /**
+         * @brief recorridoPreOrder es el dato del nodo
+         * @param nodo nodo incial desde donde se va a recorrer
+         */
         void recorridoPreOrder(TreeNode *nodo){
             if(nodo != 0){
                 std::cout << "El recorrido del arbol es: " << nodo->getDato() << std::endl;
@@ -100,6 +122,11 @@ class BinaryTree {
 
 
 public:
+        /**
+     * @brief eliminar busca el nodo que se quiere eliminar
+     * @param nodo nodo por el que se esta recorriendo
+     * @param buscado valor entero que determina el valor buscado
+     */
     void eliminar(TreeNode *nodo, int buscado){
         if(root == nullptr){
             return;
@@ -116,6 +143,10 @@ public:
     }
 
 public:
+    /**
+     * @brief eliminarNodo cambia las referencias del nodo para poder eliminarlo
+     * @param nodo nodo que se elimina
+     */
     void eliminarNodo(TreeNode *nodo){
         if(nodo->left != nullptr && nodo->right != nullptr){
             TreeNode *menor = minimo(nodo->right);
@@ -139,6 +170,11 @@ public:
 
 
 public:
+    /**
+     * @brief minimo busca el nodo por el cual se va a remplazar
+     * @param nodo nodo por el cual se va recorriendo
+     * @return  retorna el nodopor el cual se va a sustituir
+     */
     TreeNode *minimo(TreeNode *nodo){
         if(nodo == nullptr){
             return nullptr;
@@ -153,6 +189,11 @@ public:
     }
 
 public:
+    /**
+     * @brief remplazar remplaza el nodo que se busca por el minimo a su derecha
+     * @param nodo nodo que se va a elimianr
+     * @param nodonuevo nodo
+     */
     void remplazar(TreeNode *nodo,TreeNode *nodonuevo){
         if(nodo->padre) {
             if (nodo->dato == nodo->padre->left->dato) {
@@ -167,6 +208,10 @@ public:
     }
 
 public: void
+    /**
+     * @brief destroy elimina el nodo cambiadole las referencias
+     * @param node el nodo a eliminar
+     */
     destroy(TreeNode *node){
         node->left = nullptr;
         node->right = nullptr;

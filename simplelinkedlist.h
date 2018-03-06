@@ -10,7 +10,17 @@
 #define null 0;
 
 
-
+/**
+  *@file simplelinkedlist.h
+  * @version 1.0
+  * @date 5/3/18
+  * @author Oscar Isaac Porras Perez
+  * @title Simple Linked List
+  * @brief Estructura de la lista simple
+  */
+/**
+ * @brief The SimpleLinkedList class Estructura de la lista simple
+ */
 class SimpleLinkedList {
     public:
             NodoSimple *primero;
@@ -20,6 +30,9 @@ class SimpleLinkedList {
     //DEFINICION DE LA CLASE
 
     public:
+            /**
+             * @brief SimpleLinkedList incializa la lista simple
+             */
             SimpleLinkedList(){
                 primero = ultimo = null;
                 ultimo = primero = null;
@@ -28,6 +41,11 @@ class SimpleLinkedList {
     // INSERTAR POR POSICION
 
     public:
+            /**
+         * @brief insertarPorPosicion inserta un nodo en una posicion en especifico
+         * @param pos posicon en la que se va a insertar
+         * @param dato dato del nodo
+         */
         void insertarPorPosicion(int pos, QString dato){
 
             NodoSimple *corredor = primero;
@@ -80,6 +98,10 @@ class SimpleLinkedList {
     //INGRESAR AL FINAL
 
     public:
+        /**
+         * @brief ingresarDatoFinal inserta un dato al final de la lista
+         * @param dato dato del nodo
+         */
         void ingresarDatoFinal(QString dato){
 
             NodoSimple *temporal = new NodoSimple(dato);
@@ -110,6 +132,10 @@ class SimpleLinkedList {
     //INGRESAR AL INICIO
 
     public:
+        /**
+         * @brief ingresarDatoInicio inserta un nodo al inicio de la lista
+         * @param dato dato del nodo
+         */
         void ingresarDatoInicio(QString dato){
             NodoSimple *temporal = new NodoSimple(dato);
 
@@ -137,6 +163,10 @@ class SimpleLinkedList {
     // ELIMINAR POR POSICION
 
     public:
+        /**
+         * @brief eliminarPosicion elimina un nodo en una posicion en especifico
+         * @param pos posicion en la que se va a eliminar
+         */
         void eliminarPosicion(int pos){
             NodoSimple *corredor = primero;
             while(corredor-> getPos() != (pos-1)){
@@ -164,6 +194,9 @@ class SimpleLinkedList {
     //ELIMINAR AL INICIO
 
     public:
+        /**
+         * @brief eliminarInicio elimina el nodo del inicio de la lista
+         */
         void eliminarInicio() {
              primero = primero->siguiente;
 
@@ -189,6 +222,9 @@ class SimpleLinkedList {
     //ELIMINAR AL FINAL
 
     public:
+        /**
+         * @brief eliminarFinal elimina el nodo del final de la lista
+         */
         void eliminarFinal() {
 
             if(primero == 0){
@@ -216,6 +252,9 @@ class SimpleLinkedList {
     // IMPRIMIR LISTA
 
     public:
+        /**
+         * @brief imprimirLista imprime la lista
+         */
         void imprimirLista(){
             NodoSimple *corredor = primero;
             if (primero == 0){
@@ -233,6 +272,11 @@ class SimpleLinkedList {
     //EDITAR POR POSICION
 
     public:
+        /**
+         * @brief editar edita el dato de un nodo en especifico
+         * @param pos posicion del nodo que se quiere editar
+         * @param dato dato por el que se quiere modificar
+         */
         void editar(int pos, QString dato){
 
 
@@ -253,6 +297,11 @@ class SimpleLinkedList {
     }
 
     public:
+        /**
+         * @brief obtenerporPosicion retorna el nodo que se esta buscando
+         * @param pos posicion del nodo buscado
+         * @return el nodo buscado
+         */
         NodoSimple obtenerporPosicion(int pos){
         NodoSimple *corredor = primero;
             if (pos < largo){

@@ -1,0 +1,174 @@
+\hypertarget{class_binary_tree}{}\section{Referencia de la Clase Binary\+Tree}
+\label{class_binary_tree}\index{Binary\+Tree@{Binary\+Tree}}
+
+
+The \mbox{\hyperlink{class_binary_tree}{Binary\+Tree}} class clase que maneja la estructura del arbol binario.  
+
+
+
+
+{\ttfamily \#include $<$binarytree.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_binary_tree_adf45bce605436b26c353b87e27bffe50}{Binary\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_binary_tree}{Binary\+Tree}} inicia el arbol binario. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{class_binary_tree_aabfed860b1c67b2a1cd12eacf870fc8c}{get\+Root}} ()
+\item 
+void \mbox{\hyperlink{class_binary_tree_a198bb1b6bd9d4fe1535d8189b9d3dc3e}{insertar\+Nodo}} (int dato)
+\begin{DoxyCompactList}\small\item\em insertar\+Nodo inserta un nodo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_binary_tree_ad7162208805ed8f96c59cc6ba47d25a1}{recorrido\+Pre\+Order}} (\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$nodo)
+\begin{DoxyCompactList}\small\item\em recorrido\+Pre\+Order es el dato del nodo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_binary_tree_a457aa0a390da80c9d732c525dd006d0f}{eliminar}} (\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$nodo, int buscado)
+\begin{DoxyCompactList}\small\item\em eliminar busca el nodo que se quiere eliminar \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_binary_tree_ae67035ec37e83ccbceabb71826226e8d}{eliminar\+Nodo}} (\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$nodo)
+\begin{DoxyCompactList}\small\item\em eliminar\+Nodo cambia las referencias del nodo para poder eliminarlo \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$ \mbox{\hyperlink{class_binary_tree_abcee209ca30b59708c0ef9f22863944c}{minimo}} (\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$nodo)
+\begin{DoxyCompactList}\small\item\em minimo busca el nodo por el cual se va a remplazar \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_binary_tree_a9fe0609a3ea42f1e3062e25e43fea81b}{remplazar}} (\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$nodo, \mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$nodonuevo)
+\begin{DoxyCompactList}\small\item\em remplazar remplaza el nodo que se busca por el minimo a su derecha \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_binary_tree_adca59e6c9ff7a3c87aa35955ba7897ef}{destroy}} (\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em destroy elimina el nodo cambiadole las referencias \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+The \mbox{\hyperlink{class_binary_tree}{Binary\+Tree}} class clase que maneja la estructura del arbol binario. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_binary_tree_adf45bce605436b26c353b87e27bffe50}\label{class_binary_tree_adf45bce605436b26c353b87e27bffe50}} 
+\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
+\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{Binary\+Tree()}{BinaryTree()}}
+{\footnotesize\ttfamily Binary\+Tree\+::\+Binary\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_binary_tree}{Binary\+Tree}} inicia el arbol binario. 
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_binary_tree_adca59e6c9ff7a3c87aa35955ba7897ef}\label{class_binary_tree_adca59e6c9ff7a3c87aa35955ba7897ef}} 
+\index{Binary\+Tree@{Binary\+Tree}!destroy@{destroy}}
+\index{destroy@{destroy}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Binary\+Tree\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+destroy elimina el nodo cambiadole las referencias 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em node} & el nodo a eliminar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_binary_tree_a457aa0a390da80c9d732c525dd006d0f}\label{class_binary_tree_a457aa0a390da80c9d732c525dd006d0f}} 
+\index{Binary\+Tree@{Binary\+Tree}!eliminar@{eliminar}}
+\index{eliminar@{eliminar}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{eliminar()}{eliminar()}}
+{\footnotesize\ttfamily void Binary\+Tree\+::eliminar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$}]{nodo,  }\item[{int}]{buscado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar busca el nodo que se quiere eliminar 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodo} & nodo por el que se esta recorriendo \\
+\hline
+{\em buscado} & valor entero que determina el valor buscado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_binary_tree_ae67035ec37e83ccbceabb71826226e8d}\label{class_binary_tree_ae67035ec37e83ccbceabb71826226e8d}} 
+\index{Binary\+Tree@{Binary\+Tree}!eliminar\+Nodo@{eliminar\+Nodo}}
+\index{eliminar\+Nodo@{eliminar\+Nodo}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{eliminar\+Nodo()}{eliminarNodo()}}
+{\footnotesize\ttfamily void Binary\+Tree\+::eliminar\+Nodo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$}]{nodo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+eliminar\+Nodo cambia las referencias del nodo para poder eliminarlo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodo} & nodo que se elimina \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_binary_tree_aabfed860b1c67b2a1cd12eacf870fc8c}\label{class_binary_tree_aabfed860b1c67b2a1cd12eacf870fc8c}} 
+\index{Binary\+Tree@{Binary\+Tree}!get\+Root@{get\+Root}}
+\index{get\+Root@{get\+Root}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{get\+Root()}{getRoot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tree_node}{Tree\+Node}}$\ast$ Binary\+Tree\+::get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_binary_tree_a198bb1b6bd9d4fe1535d8189b9d3dc3e}\label{class_binary_tree_a198bb1b6bd9d4fe1535d8189b9d3dc3e}} 
+\index{Binary\+Tree@{Binary\+Tree}!insertar\+Nodo@{insertar\+Nodo}}
+\index{insertar\+Nodo@{insertar\+Nodo}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{insertar\+Nodo()}{insertarNodo()}}
+{\footnotesize\ttfamily void Binary\+Tree\+::insertar\+Nodo (\begin{DoxyParamCaption}\item[{int}]{dato }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+insertar\+Nodo inserta un nodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em dato} & es el dato del nodo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_binary_tree_abcee209ca30b59708c0ef9f22863944c}\label{class_binary_tree_abcee209ca30b59708c0ef9f22863944c}} 
+\index{Binary\+Tree@{Binary\+Tree}!minimo@{minimo}}
+\index{minimo@{minimo}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{minimo()}{minimo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tree_node}{Tree\+Node}}$\ast$ Binary\+Tree\+::minimo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$}]{nodo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+minimo busca el nodo por el cual se va a remplazar 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodo} & nodo por el cual se va recorriendo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+retorna el nodopor el cual se va a sustituir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_binary_tree_ad7162208805ed8f96c59cc6ba47d25a1}\label{class_binary_tree_ad7162208805ed8f96c59cc6ba47d25a1}} 
+\index{Binary\+Tree@{Binary\+Tree}!recorrido\+Pre\+Order@{recorrido\+Pre\+Order}}
+\index{recorrido\+Pre\+Order@{recorrido\+Pre\+Order}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{recorrido\+Pre\+Order()}{recorridoPreOrder()}}
+{\footnotesize\ttfamily void Binary\+Tree\+::recorrido\+Pre\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$}]{nodo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+recorrido\+Pre\+Order es el dato del nodo 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodo} & nodo incial desde donde se va a recorrer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_binary_tree_a9fe0609a3ea42f1e3062e25e43fea81b}\label{class_binary_tree_a9fe0609a3ea42f1e3062e25e43fea81b}} 
+\index{Binary\+Tree@{Binary\+Tree}!remplazar@{remplazar}}
+\index{remplazar@{remplazar}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{remplazar()}{remplazar()}}
+{\footnotesize\ttfamily void Binary\+Tree\+::remplazar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$}]{nodo,  }\item[{\mbox{\hyperlink{class_tree_node}{Tree\+Node}} $\ast$}]{nodonuevo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+remplazar remplaza el nodo que se busca por el minimo a su derecha 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodo} & nodo que se va a elimianr \\
+\hline
+{\em nodonuevo} & nodo \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{binarytree_8h}{binarytree.\+h}}\end{DoxyCompactItemize}

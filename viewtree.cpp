@@ -55,7 +55,7 @@ void ViewTree::recorreDibuja(TreeNode *nodo, int corx, int cory,QString lado){
         font.setBold(false);
         font.setFamily("Calibri");
 
-        std::cout << "Entro a la funcion"<< std::endl;
+
         QBrush redBrush(Qt::red);
         QBrush blueBrush(Qt::blue);
         QPen blackpen(Qt::black);

@@ -30,11 +30,7 @@ ListaSimple::~ListaSimple()
     delete ui;
 }
 
-void ListaSimple::on_RefreshButton_clicked()
-{
 
-
-}
 
 
 
