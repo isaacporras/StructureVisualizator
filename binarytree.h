@@ -138,88 +138,129 @@ public:
             eliminar(nodo->right, buscado);
         }
         else{
-            eliminarNodo(nodo);
+            removeNodo(nodo);
         }
     }
 
 public:
-    /**
-     * @brief eliminarNodo cambia las referencias del nodo para poder eliminarlo
-     * @param nodo nodo que se elimina
-     */
-    void eliminarNodo(TreeNode *nodo){
-        if(nodo->left != nullptr && nodo->right != nullptr){
-            TreeNode *menor = minimo(nodo->right);
-            nodo->dato = menor->dato;
-            eliminarNodo(menor);
-        }
-        else if(nodo->left != nullptr){
-            remplazar(nodo,nodo->left);
-            destroy(nodo);
-        }
-        else if(nodo->right){
-            remplazar(nodo, nodo->right);
-            destroy(nodo);
-        }
-        else{
-            remplazar(nodo, nullptr);
-            destroy(nodo);
+        bool removeNodo(TreeNode *nodo ) {
+
+
+            bool tieneNodoDerecha = nodo->right != nullptr;
+            bool tieneNodoIzquierda = nodo->left != nullptr;
+
+
+
+
+            if (!tieneNodoDerecha && !tieneNodoIzquierda) {
+                return removeNodoCaso1( nodo );
+            }
+
+
+            if ( tieneNodoDerecha && !tieneNodoIzquierda ) {
+                return removeNodoCaso2( nodo );
+            }
+
+
+            if ( !tieneNodoDerecha && tieneNodoIzquierda ) {
+                return removeNodoCaso2( nodo );
+            }
+
+
+            if ( tieneNodoDerecha && tieneNodoIzquierda ) {
+                return removeNodoCaso3( nodo );
+            }
+
+            return false;
         }
 
-    }
+public: bool removeNodoCaso1(TreeNode *nodo ) {
+
+            TreeNode *hijoIzquierdo = nodo->padre->left;
+            TreeNode *hijoDerecho = nodo->padre->right;
+
+            if ( hijoIzquierdo == nodo ) {
+                nodo->padre->left = nullptr;
+
+                return true;
+            }
+
+            if ( hijoDerecho == nodo) {
+                nodo->padre->right = nullptr;
+
+                return true;
+            }
+
+            return false;
+        }
+
+public:
+        bool removeNodoCaso2( TreeNode *nodo ) {
+
+
+
+            TreeNode *hijoIzquierdo = nodo->padre->left;
+            TreeNode *hijoDerecho = nodo->padre->right;
+
+
+            TreeNode *hijoActual = nodo->left != nullptr ?
+                    nodo->left : nodo->right;
+
+            if ( hijoIzquierdo == nodo ) {
+                nodo->padre->left = hijoActual;
+
+
+
+                hijoActual->padre = nodo->padre;
+                nodo->right = nullptr;
+                nodo->left = nullptr;
+
+
+                return true;
+            }
+
+            if ( hijoDerecho == nodo) {
+                nodo->padre->right = hijoActual;
+
+
+
+                hijoActual->padre = nodo->padre;
+                hijoActual->right = nullptr;
+                nodo->right = nullptr;
+                nodo->left = nullptr;
+
+
+                return true;
+            }
+
+            return false;
+        }
+
+public:
+        bool removeNodoCaso3( TreeNode* nodo ) {
+
+            TreeNode * nodoMasALaIzquierda = recorrerIzquierda( nodo->right);
+            if ( nodoMasALaIzquierda != nullptr ) {
+
+                nodo->setDato(nodoMasALaIzquierda->dato);
+
+
+                removeNodo( nodoMasALaIzquierda );
+                return true;
+            }
+            return false;
+        }
 
 
 public:
-    /**
-     * @brief minimo busca el nodo por el cual se va a remplazar
-     * @param nodo nodo por el cual se va recorriendo
-     * @return  retorna el nodopor el cual se va a sustituir
-     */
-    TreeNode *minimo(TreeNode *nodo){
-        if(nodo == nullptr){
-            return nullptr;
-        }
-        if(nodo->left){
-            return minimo(nodo->left);
-        }
-        else{
+        TreeNode *recorrerIzquierda(TreeNode* nodo) {
+            if (nodo->left != nullptr) {
+                return recorrerIzquierda( nodo->left);
+            }
             return nodo;
         }
 
-    }
-
-public:
-    /**
-     * @brief remplazar remplaza el nodo que se busca por el minimo a su derecha
-     * @param nodo nodo que se va a elimianr
-     * @param nodonuevo nodo
-     */
-    void remplazar(TreeNode *nodo,TreeNode *nodonuevo){
-        if(nodo->padre) {
-            if (nodo->dato == nodo->padre->left->dato) {
-                nodo->padre->left = nodonuevo;
-            } else if (nodo->dato == nodo->padre->right->dato) {
-                nodo->padre->right = nodonuevo;
-            }
-        }
-        if(nodonuevo!= nullptr){
-            nodonuevo->padre = nodo->padre;
-        }
-    }
-
-public: void
-    /**
-     * @brief destroy elimina el nodo cambiadole las referencias
-     * @param node el nodo a eliminar
-     */
-    destroy(TreeNode *node){
-        node->left = nullptr;
-        node->right = nullptr;
-        delete( node);
-    }
-
-
-};
+    };
 
 
 

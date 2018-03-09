@@ -96,6 +96,9 @@ void EnlazadaDoble::on_addInicioButton_clicked()
 void EnlazadaDoble::on_ButtonInsertarporPos_clicked()
 {
     QString pos = ui->labelTextoposicionInsertar->text();
+    if (pos.toInt()>lista->largo || pos.toInt()<1){
+        return;
+    }
     lista->insertarPorPosicion(pos.toInt(),ui->labeltextovalor->text());
     recorreDibuja(lista);
 }
@@ -115,6 +118,9 @@ void EnlazadaDoble::on_EliminarFinalButton_clicked()
 void EnlazadaDoble::on_EliminarPosButton_clicked()
 {
     QString posicion = ui->labelEliminarPos->text();
+    if (posicion.toInt()>lista->largo || posicion.toInt()<1){
+        return;
+    }
     lista->eliminarPosicion(posicion.toInt());
     recorreDibuja(lista);
 }
@@ -122,6 +128,9 @@ void EnlazadaDoble::on_EliminarPosButton_clicked()
 void EnlazadaDoble::on_EditarButton_clicked()
 {
     std::cout << "ENTRO" << std::endl;
+    if (ui->LabelEditarPos->text().toInt()>lista->largo || ui->LabelEditarPos->text().toInt()<1){
+        return;
+    }
     lista->editar(ui->LabelEditarPos->text().toInt(),ui->LabelEditarVal->text());
     recorreDibuja(lista);
 }

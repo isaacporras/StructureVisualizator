@@ -20,18 +20,12 @@ ListaSimple::ListaSimple(QWidget *parent) :
     int posx = 50;
 
 
-
-
-
 }
 
 ListaSimple::~ListaSimple()
 {
     delete ui;
 }
-
-
-
 
 
 
@@ -43,15 +37,19 @@ void ListaSimple::on_addButton_clicked()
  recorreDibuja(lista);
 
 }
+
 void ListaSimple::recorreDibuja(SimpleLinkedList *lista){
 
     NodoSimple *corredor = lista->primero;
     scene->clear();
     posx = 50;
+
     if (lista->primero == 0){
         std::cout << "No hay elementos en la lista" << std::endl;
     }
+
     else{
+
         while(corredor != 0){
 
             QFont font;
@@ -65,11 +63,13 @@ void ListaSimple::recorreDibuja(SimpleLinkedList *lista){
             blackpen.setWidth(6);
 
             rectangle = scene->addRect(posx,0,100,100,blackpen,blueBrush);
+
             QPainterPath path;
             path.addText(posx+45, 50, font,  corredor->getDato());
             scene->addPath(path,QPen(QBrush(Qt::black), 1), QBrush(Qt::black));
 
             if(corredor != lista->ultimo){
+
             QPolygonF Triangle;
             Triangle.append(QPointF(posx+150.,45));
             Triangle.append(QPointF(posx+130., 65.));
@@ -98,8 +98,9 @@ void ListaSimple::on_ButtonInsertarporPos_clicked()
 {
 
     QString entero = ui->labelTextoposicionInsertar->text();
-
-
+    if (entero.toInt()>lista->largo || entero.toInt()<1){
+        return;
+    }
     lista->insertarPorPosicion(entero.toInt(),ui->labeltextovalor->text());
     recorreDibuja(lista);
 }
@@ -119,7 +120,11 @@ void ListaSimple::on_EliminarFinalButton_clicked()
 
 void ListaSimple::on_EliminarPosButton_clicked()
 {
+
     QString entero = ui->labelEliminarPos->text();
+    if (entero.toInt()>lista->largo || entero.toInt()<1){
+        return;
+    }
     lista->eliminarPosicion(entero.toInt());
     recorreDibuja(lista);
 }
@@ -127,6 +132,9 @@ void ListaSimple::on_EliminarPosButton_clicked()
 void ListaSimple::on_EditarButton_clicked()
 {
     QString entero = ui->LabelEditarPos->text();
+    if (entero.toInt() >lista->largo || entero.toInt()<1){
+        return;
+    }
     lista->editar(entero.toInt(),ui->LabelEditarVal->text());
     recorreDibuja(lista);
 }

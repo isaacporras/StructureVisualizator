@@ -117,6 +117,9 @@ void ViewCircularList::on_addInicioButton_clicked()
 
 void ViewCircularList::on_ButtonInsertarporPos_clicked()
 {
+    if (ui->labelTextoposicionInsertar->text().toInt() >lista->largo || ui->labelTextoposicionInsertar->text().toInt()<1){
+        return;
+    }
     lista->insertarPorPosicion(ui->labelTextoposicionInsertar->text().toInt(), ui->labeltextovalor->text());
     recorreDibuja(lista);
 }
@@ -135,12 +138,18 @@ void ViewCircularList::on_EliminarFinalButton_clicked()
 
 void ViewCircularList::on_EliminarPosButton_clicked()
 {
+    if (ui->labelEliminarPos->text().toInt() >lista->largo || ui->labelEliminarPos->text().toInt()<1){
+        return;
+    }
     lista->eliminarPosicion(ui->labelEliminarPos->text().toInt());
     recorreDibuja(lista);
 }
 
 void ViewCircularList::on_EditarButton_clicked()
 {
+    if (ui->LabelEditarPos->text().toInt() >lista->largo || ui->LabelEditarPos->text().toInt()<1){
+        return;
+    }
     lista->editar(ui->LabelEditarPos->text().toInt(),ui->LabelEditarVal->text());
     recorreDibuja(lista);
 }
